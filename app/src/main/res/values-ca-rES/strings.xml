@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Listado de usuarios</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="repetirContraseña">Repetir contraseña</string>
+    <string name="tipo">Tipo: </string>
+    <string name="admin">Administrador </string>
+    <string name="guardar">Guardar</string>
+    <string name="editar">Editar usuario</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Users list</string>
+    <string name="usuario">User</string>
+    <string name="contraseña">Password</string>
+    <string name="repetirContraseña">Repeat the password</string>
+    <string name="tipo">Type: </string>
+    <string name="admin">Administrator </string>
+    <string name="guardar">Save </string>
+    <string name="editar">Edit user</string>
+</resources>
