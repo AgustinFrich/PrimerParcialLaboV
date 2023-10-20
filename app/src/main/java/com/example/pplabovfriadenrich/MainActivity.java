@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.pplabovfriadenrich.EditMVC.EditModel;
+
 public class MainActivity extends AppCompatActivity implements IOnUsuarioClick {
     UsuarioAdapter adapter;
 
@@ -32,7 +34,10 @@ public class MainActivity extends AppCompatActivity implements IOnUsuarioClick {
     @Override
     protected void onResume() {
         super.onResume();
-        adapter.notifyDataSetChanged();
+        int pos = EditModel.getPosicion();
+        if(pos != -1) {
+            adapter.notifyItemChanged(pos);
+        }
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.pplabovfriadenrich;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +20,13 @@ public class ListadoUsuarios {
         usuarios.add(new Usuario("P9", "100008", "Usuario"));
     }
 
-    public static Usuario ObtenerUno(int posicion){
-        return  usuarios.get(posicion);
+    public static Usuario obtenerUno(int posicion){
+        return usuarios.get(posicion);
     }
 
-    public static boolean EditarUno(int posicion, Usuario nuevoUsuario, String repetirContraseña){
-        if(nuevoUsuario.nombre.length() >= 3 && nuevoUsuario.contraseña.equals(repetirContraseña)){
+    public static boolean editarUno(int posicion, Usuario nuevoUsuario, Boolean repiteBien){
+
+        if(nuevoUsuario.nombre.length() >= 3 && repiteBien){
             usuarios.set(posicion, nuevoUsuario);
             return true;
         }
